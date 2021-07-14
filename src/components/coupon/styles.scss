@@ -1,0 +1,48 @@
+.coupon{
+    position: fixed; 
+    bottom:0px;
+    min-width: 100%;
+    border: 3px solid darkgray;
+    padding: 0px 10px;
+    background: #e7e7e7;
+    min-width: calc(100% - 26px); 
+    left: 0;
+
+    @media (min-width: 1200px) {
+        left: unset;
+        bottom: 0;
+        right: 0;
+        min-width: 325px;
+        max-width: 325px;
+    }
+}
+.couponContent{
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    border-bottom: 2px solid darkgray;
+}
+
+.couponData{
+    margin-right: 10px;
+}
+
+.couponTotal{
+    padding: 10px 0px;
+    cursor: pointer; 
+
+    @media (max-width: 1200px) { 
+        width:100%
+    }
+}
+
+.showCouponDetail{
+    display: block;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.hideCouponDetail{
+    display: none;
+}

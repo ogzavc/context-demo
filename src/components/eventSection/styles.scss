@@ -1,0 +1,99 @@
+.eventWrapper{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 1200px) {
+        flex-direction: row;
+    }
+}
+
+.eventInfo{
+    display: flex;
+    flex-direction: column; 
+}
+
+.eventInfoTitle{
+    display: flex;
+    font-weight: bold;
+    color:red;
+    border: 1px solid gray;
+    padding: 3px 5px;
+    min-height: 22px; 
+
+    @media (min-width: 1200px) {
+        min-width: 315px;
+        max-width: 315px;
+    }
+
+    &:first-of-type{
+        border-bottom: none;
+        border-top: none;
+    }
+   
+}
+.eventInfoId{
+    color:green;
+    margin-right: 5px; 
+}
+
+.eventInfoDetail{
+    display: flex;
+    border: 1px solid gray;
+    padding: 3px 5px; 
+    min-height: 22px; 
+}
+
+.eventInfoArea{
+ margin-right: 10px;
+}
+
+.eventBetWrapper{
+    display: flex; 
+    flex-wrap: wrap;
+
+    @media (max-width: 1200px) {
+        border-left: 1px solid gray;
+    }
+}
+
+.eventBetInner, .eventBetInnerActive{
+    display: flex;
+    flex-direction: column; 
+   
+    @media (max-width: 1200px) {
+        min-width: 20%;
+    }
+}
+
+.eventBetInnerActive .eventBetRatio{
+    background: yellow;
+}
+
+.eventBet{
+    display: flex;
+
+    &:last-of-type{
+        .eventBetRatio{ 
+            border-top:none;
+            cursor: pointer;
+        }
+    }
+}
+
+.eventBetRatio,.eventBetRatioTitle{
+    min-width: 40px;
+    border: 1px solid gray;
+    padding: 3px;
+    border-left:none;
+    min-height: 22px;
+}
+
+.eventBetRatioTitle{
+    border-top: none;
+ 
+}
+
+.eventBetRatio{
+    cursor: pointer;
+    border-top: none;
+    user-select: none;
+}
